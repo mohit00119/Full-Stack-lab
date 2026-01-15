@@ -14,9 +14,25 @@
 // module.exports = {
 //     sum,multiply
 // }
-let fs = require('fs');
+// let fs = require('fs');
+// let path=__dirname + '/data.txt';
+// fs.writeFile(path, 'Hello, this is a sample text file.', (err) => {
+//     if (err) throw err;
+//     console.log('File has been created successfully.');
+// });
+
+// let fs=require('fs');
+// let path=__dirname + '/data.txt';   
+// fs.readFile(path,'utf8',(err,data)=>{
+//     if(err) throw err;
+//     console.log('File content:',data);
+// });
+
+let fs=require('fs');
 let path=__dirname + '/data.txt';
 fs.writeFile(path, 'Hello, this is a sample text file.', (err) => {
-    if (err) throw err;
+    if (err) 
+        console.log(err);
+        else
     console.log('File has been created successfully.');
 });
